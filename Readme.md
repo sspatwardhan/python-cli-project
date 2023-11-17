@@ -6,30 +6,24 @@ This Python script helps you plan a juice party by determining the juice combina
 
 - [Thought Process](#thought-process)
 - [Usage](#usage)
-- [How to Run](#how-to-run)
-- [Workflow] (#workflow)
+- [Workflow](#workflow)
 
 ## Thought Process
 
 1. Approach
     - Greet the user
     - 
-2. Structural break down
+2. Assumptions
+
+3. Structural break down
     - Logical division of the methods and files for
         - Better testability
         - Error Handling
-2. Avoided
-    - Creating a web-application
+4. Avoided (in interest of time)
+    - Creating a api backed web-application 
     - Creating a 
-3. Resources used
-    - x
-    - y
-    - z
 
-## Dependencies
 
-- Python 3.x
-- pytest
 
 ## Usage
 
@@ -47,4 +41,5 @@ pytest
     
     
 ## Workflow
+
 ![Alt text](Zinrelo_Juice_Problem.png?raw=true "Workflow")
