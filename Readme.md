@@ -10,7 +10,7 @@ This Python script helps you plan a juice party by determining the juice combina
 
 ## Thought Process
 
-1. Assumptions (as per [requirements](requirement_docs/Problem1.docx))
+1. Assumptions (as per [requirements](requirement_docs/Problem1.pdf))
     - 
 
 2. Structural break down
