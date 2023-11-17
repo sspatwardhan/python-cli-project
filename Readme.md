@@ -36,12 +36,14 @@ This Python script helps you plan a juice party by determining the juice combina
 To use this script, follow these steps:
 
 1. Clone the repository to your local machine
-2. Run Project
-``bash
-    python3 zin_juice_service.py
-3. Run unitTests
-``bash
-    pytest
+2. To run project - execute following command from the root dir
+```
+python3 zin_juice_service.py
+```
+3. Run unitTests - execute following command from the root dir
+```
+pytest
+```
     
     
 ## Workflow
