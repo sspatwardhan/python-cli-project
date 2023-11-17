@@ -43,7 +43,7 @@ pip install -r pypackages.txt
 ```
 4. To run project - execute following command from the root dir
 ```
-python3 zin_juice_service.py
+python3 zin_juice_main.py
 ```
 3. Run unitTests - execute following command from the root dir
 ```
