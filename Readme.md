@@ -1,4 +1,4 @@
-# Juice Party Requirements Calculator
+# Juice Party Project
 
 This Python script helps you plan a juice party by determining the juice combinations based on the calorie requirements of your friends.
 
