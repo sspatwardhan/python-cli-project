@@ -18,7 +18,7 @@ This Python script helps you plan a juice party by determining the juice combina
     - Logical division of the methods and files for
         - Better testability
         - Error Handling
-3. Good to have (avoided in interest of time)
+3. Good to have
     - API backed web-application 
     - Enhanced code coverage
     - Enhanced optimization for further unit-testing
