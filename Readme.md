@@ -29,9 +29,18 @@ This Python script helps you plan a juice party by determining the juice combina
 ## Usage
 
 To use this script, follow these steps:
-
-1. Clone the repository to your local machine
-2. To run project - execute following command from the root dir
+1. Install python3 - https://www.python.org/downloads/
+2. Install pip - 
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python3 get-pip.py
+```
+3. Clone the repository to your local machine, go to cloned dir
+4. Install required packages
+```
+pip install -r pypackages.txt
+```
+4. To run project - execute following command from the root dir
 ```
 python3 zin_juice_service.py
 ```
