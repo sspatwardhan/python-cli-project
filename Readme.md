@@ -4,9 +4,14 @@ This Python script helps you plan a juice party by determining the juice combina
 
 ## Table of Contents
 
+- [Workflow](#workflow)
 - [Thought Process](#thought-process)
 - [Usage](#usage)
-- [Workflow](#workflow)
+- [Sample Output](#sample-output)
+
+## Workflow
+
+![Alt text](Zinrelo_Juice_Problem.png?raw=true "Workflow")
 
 ## Thought Process
 
@@ -50,7 +55,47 @@ python3 zin_juice_main.py
 pytest
 ```
     
-    
-## Workflow
 
-![Alt text](Zinrelo_Juice_Problem.png?raw=true "Workflow")
+## Sample Output
+```
+===========================================================================
+|                                                                         |
+|           \O___.____ /   I am ZINO!!                                    |
+|             \   .  /     Let's make your Juice Party a big hit :-)      |
+|               \ ,/                                                      |
+|                []                                                       |
+|                []                                                       |
+|                []                                                       |
+|             --------                                                    |
+===========================================================================
+
+~ No. of friends (between 1 to 200): 2 
+
+--------------- Getting requirements for Friend:  1
+
+~ Number of unique fruit juices followed by their calorie content
+ E.g. If 2(juices) then input 2 9 34: 2 4 2
+
+~ Sequence of lower case alphabets representing the NAME of the fruit juice
+ (E.g. abzzepnpp): acaaccacacaaaccac
+
+~ Number of calories allowed for Friend: 1
+ E.g. 1 to any +ve number: 16
+
+--------------- Getting requirements for Friend:  2
+
+~ Number of unique fruit juices followed by their calorie content
+ E.g. If 2(juices) then input 2 9 34: 3 87 40 30 
+
+~ Sequence of lower case alphabets representing the NAME of the fruit juice
+ (E.g. abzzepnpp): ytuytuyyyyty
+
+~ Number of calories allowed for Friend: 2
+ E.g. 1 to any +ve number: 30
+
+Possible juice mixes you can offer to
+---------------------------------------------------------
+[Friend 1] aaaa
+[Friend 2] y
+---------------------------------------------------------
+```
