@@ -1,6 +1,10 @@
 import logging as jpLogger
 generalErr = "Error: Invalid input. Try again."
 
+"""
+parameter(s) - numberOfFriends : type - string
+returns - validated integer value
+"""
 def handleFriendsCount(numberOfFriends):
     while True:
         try:
@@ -18,6 +22,10 @@ def handleFriendsCount(numberOfFriends):
             retVal = None
     return retVal
 
+"""
+parameter(s) - calorieStats : type - list of strings
+returns - validated list of integers
+"""
 def handleCalorieStats(calorieStats):
     calStatInstructions = '''
 Instructions:
@@ -50,6 +58,12 @@ Instructions:
             retVal = None
     return retVal
 
+"""
+parameter(s) 
+    - expectedNumberOfUniqueJuices : type - integer
+    - juiceNameSequence : type - list of strings
+returns - validated list of integers
+"""
 def handleJuiceNameSequene(expectedNumberOfUniqueJuices, juiceNameSequence):
     juiceNameSequencingInstructions = '''
 Instructions:
@@ -57,10 +71,15 @@ Instructions:
 --- Only alphabets are allowed
     '''
     while True:
-        juiceNameSequence = juiceNameSequence.strip()
+        juiceNameSequence = juiceNameSequence.strip() # remove spaces
         try:
+            juiceNameSequenceForValidation = ''.join(set(filter(str.isalpha, juiceNameSequence.lower())))
             # here
-            juiceNameSequenceForValidation = ''.join(set(filter(str.isalpha, juiceNameSequence.lower().strip())))
+            # filter(str.isalpha, juiceNameSequence.lower())
+            # -- str.isalpha returns True if all characters in the string are alphabets
+            # -- filter creates iteratable object
+            # -- set() creates unsorted list of alphabets
+            # -- join - joins all the alphabets
             
             if len(juiceNameSequenceForValidation) == expectedNumberOfUniqueJuices:
                 # if lowered string contains only alphabets then
@@ -70,7 +89,11 @@ Instructions:
         except ValueError:
             print(generalErr + juiceNameSequencingInstructions)  # error for non numbers
 
-def handleCalorieIntakeForFriend(friendCounter, calorieIntake):
+"""
+parameter(s) - calorieIntake : type - string
+returns - validated integer
+"""
+def handleCalorieIntakeForFriend(calorieIntake):
     while True:
         try:        
             calorieIntake = int(calorieIntake)
@@ -86,11 +109,15 @@ def handleCalorieIntakeForFriend(friendCounter, calorieIntake):
             retVal = None
     return retVal
 
-def welcome():
-    print('''
+"""
+parameter(s) - botName : type - string
+returns - greeting message
+"""
+def welcome(botName):
+    return f"""
 ===========================================================================
 |                                                                         |
-|           \O___.____ /   I am ZINO!!                                    |
+|           \O___.____ /   I am {botName}!!                                    |
 |             \   .  /     Let's make your Juice Party a big hit :-)      |
 |               \ ,/                                                      |
 |                []                                                       |
@@ -98,11 +125,15 @@ def welcome():
 |                []                                                       |
 |             --------                                                    |
 ===========================================================================
-        ''')
+        """
     
 
+"""
+parameter(s) - results : type - list of strings
+returns - nothing, just prints the results
+"""
 def showResults(results):
-    print("\nPossible juice mixes\n---------------------------------------------------------")
+    print("\nPossible juice mixes you can offer to\n---------------------------------------------------------")
     for r in range(0, len(results)):
         if len(results[r]) > 0:
             print(f"[Friend {r+1}] {results[r]}")

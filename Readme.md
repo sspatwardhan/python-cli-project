@@ -11,8 +11,9 @@ This Python script helps you plan a juice party by determining the juice combina
 ## Thought Process
 
 1. Assumptions (as per [requirements](requirement_docs/Problem1.pdf))
-    - 
-
+    - Ask availibile juices for every friend
+    - Do not share available juices
+    - Do not eliminate juices from single list
 2. Structural break down
     - Logical division of the methods and files for
         - Better testability

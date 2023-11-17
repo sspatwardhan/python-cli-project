@@ -15,11 +15,11 @@ def getJuicePartyReqs():
         
         # Params - juice count, (ask for) juice name sequence
         juiceNames = mh.handleJuiceNameSequene(calStatsPerJuice[0],input("\n~ Sequence of lower case alphabets representing the NAME of the fruit juice\n (E.g. abzzepnpp): ").strip())
-        friendsCalReq = mh.handleCalorieIntakeForFriend(friendCounter, input(f"\n~ Number of calories allowed for Friend: {friendCounter}\n E.g. 1 to any +ve number: "))
+        friendsCalReq = mh.handleCalorieIntakeForFriend(input(f"\n~ Number of calories allowed for Friend: {friendCounter}\n E.g. 1 to any +ve number: "))
         friendCounter += 1
         results.append(zjc.findJuiceMix(juiceNames, calStatsPerJuice, friendsCalReq))
 
 os.system('clear') # this will clean the console
-mh.welcome()
+print(mh.welcome("ZINO"))
 getJuicePartyReqs()
 mh.showResults(results)
