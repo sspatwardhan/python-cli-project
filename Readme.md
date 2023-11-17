@@ -19,8 +19,9 @@ This Python script helps you plan a juice party by determining the juice combina
         - Better testability
         - Error Handling
 3. Good to have
-    - API backed web-application 
-    - Enhanced code coverage
+    - API backed web-application
+    - OOPing
+    - Enhanced code coverage through unit tests
     - Enhanced optimization for further unit-testing
     - Logging
 
