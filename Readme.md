@@ -10,18 +10,18 @@ This Python script helps you plan a juice party by determining the juice combina
 
 ## Thought Process
 
-1. Approach
-    - Greet the user
+1. Assumptions (as per [requirements](requirement_docs/Problem1.docx))
     - 
-2. Assumptions
 
-3. Structural break down
+2. Structural break down
     - Logical division of the methods and files for
         - Better testability
         - Error Handling
-4. Avoided (in interest of time)
-    - Creating a api backed web-application 
-    - Creating a 
+3. Good to have (avoided in interest of time)
+    - API backed web-application 
+    - Enhanced code coverage
+    - Enhanced optimization for further unit-testing
+    - Logging
 
 
 
