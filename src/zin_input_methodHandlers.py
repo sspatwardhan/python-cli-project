@@ -84,11 +84,18 @@ Instructions:
             
             if len(juiceNameSequenceForValidation) == expectedNumberOfUniqueJuices:
                 # if lowered string contains only alphabets then
-                return sorted(list(juiceNameSequence)) # return on valid input
+                retVal = sorted(list(juiceNameSequence))
+                break # return on valid input
             else:
                 print(generalErr + juiceNameSequencingInstructions)  # error for non numbers    
+                retVal = None
+                juiceNameSequence = input("\n~ Sequence of lower case alphabets representing the NAME of the fruit juice\n (E.g. abzzepnpp): ").strip()
         except ValueError:
             print(generalErr + juiceNameSequencingInstructions)  # error for non numbers
+            retVal = None
+            juiceNameSequence = input("\n~ Sequence of lower case alphabets representing the NAME of the fruit juice\n (E.g. abzzepnpp): ").strip()
+    
+    return retVal
 
 """
 parameter(s) - calorieIntake : type - string
