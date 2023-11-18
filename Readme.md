@@ -5,6 +5,7 @@ This application helps you plan a juice party by determining the juice combinati
 ## Table of Contents
 
 - [Workflow](#workflow)
+- [Project files](#project-files)
 - [Thought Process](#thought-process)
 - [Usage](#usage)
 - [Sample Output](#sample-output)
@@ -12,6 +13,15 @@ This application helps you plan a juice party by determining the juice combinati
 ## Workflow
 
 ![Alt text](Zinrelo_Juice_Problem.png?raw=true "Workflow")
+
+## Project Files
+```
+-- Main file:
+zin_juice_main.py
+-- Supporting files:
+src/zin_input_methodHandlers.py
+src/zin_juice_calculator.py
+```
 
 ## Thought Process
 
