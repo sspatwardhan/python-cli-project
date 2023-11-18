@@ -68,8 +68,10 @@ pytest
 ```
     
 
-## Sample Outputs
-# Normal flow
+## Sample Output
+
+### Normal flow
+
 ```
 ===========================================================================
 |                                                                         |
@@ -113,7 +115,7 @@ Possible juice mixes you can offer to
 ---------------------------------------------------------
 ```
 
-# Error handling
+### Error handling
 
 ```
 ~ No. of friends (between 1 to 200): -1
