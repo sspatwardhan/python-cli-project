@@ -7,6 +7,7 @@ This application helps you plan a juice party by determining the juice combinati
 - [Workflow](#workflow)
 - [Project files](#project-files)
 - [Thought Process](#thought-process)
+- [Install] (#install)
 - [Usage](#usage)
 - [Sample Output](#sample-output)
 
@@ -41,10 +42,8 @@ src/zin_juice_calculator.py
     - Logging
 
 
+## Install
 
-## Usage
-
-To use this script, follow these steps:
 1. Install python3 - https://www.python.org/downloads/
 2. Install pip - 
 ```
@@ -56,6 +55,9 @@ python3 get-pip.py
 ```
 pip install -r pypackages.txt
 ```
+
+## Usage
+
 4. To run project - execute following command from the root dir
 ```
 python3 zin_juice_main.py
