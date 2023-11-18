@@ -1,6 +1,10 @@
 import logging as jpLogger
 import datetime
 generalErr = "Error: Invalid input. Try again."
+userInputMsg_noOfFriends = "\n~ No. of friends (between 1 to 200): "
+userInputMsg_caloriesPerJuice = "\n~ Number of unique fruit juices followed by their calorie content\n E.g. If 2(juices) then input 2 9 34: "
+userInputMsg_juiceNames = "\n~ Sequence of lower case alphabets representing the NAME of the fruit juice\n (E.g. abzzepnpp): "
+userInputMsg_caloriesForFriend = "\n~ Number of calories allowed for friend:\n E.g. 1 to any +ve number: "
 
 """
 parameter(s) - numberOfFriends : type - string
@@ -17,11 +21,11 @@ def handleFriendsCount(numberOfFriends):
                 break # return on valid input
             else:
                 print(generalErr) # error for numbers <1 and >200
-                numberOfFriends = input("\n~ No. of friends (between 1 to 200): ")
+                numberOfFriends = input(userInputMsg_noOfFriends)
                 retVal = None
         except ValueError:
             print(generalErr)  # error for non numbers
-            numberOfFriends = input("\n~ No. of friends (between 1 to 200): ")
+            numberOfFriends = input(userInputMsg_noOfFriends)
             retVal = None
     return retVal
 
@@ -55,11 +59,11 @@ Instructions:
                 break # return on valid input
             else:
                 print(generalErr + calStatInstructions)  # error for non numbers    
-                calorieStats = input("\n~ Number of unique fruit juices followed by their calorie content\n E.g. If 2(juices) then input 2 9 34: ")
+                calorieStats = input(userInputMsg_caloriesPerJuice)
                 retVal = None
         except ValueError:
             print(generalErr + calStatInstructions)  # error for non numbers
-            calorieStats = input("\n~ Number of unique fruit juices followed by their calorie content\n E.g. If 2(juices) then input 2 9 34: ")
+            calorieStats = input(userInputMsg_caloriesPerJuice)
             retVal = None
     return retVal
 
@@ -95,11 +99,11 @@ Instructions:
             else:
                 print(generalErr + juiceNameSequencingInstructions)  # error for non numbers    
                 retVal = None
-                juiceNameSequence = input("\n~ Sequence of lower case alphabets representing the NAME of the fruit juice\n (E.g. abzzepnpp): ").strip()
+                juiceNameSequence = input(userInputMsg_juiceNames).strip()
         except ValueError:
             print(generalErr + juiceNameSequencingInstructions)  # error for non numbers
             retVal = None
-            juiceNameSequence = input("\n~ Sequence of lower case alphabets representing the NAME of the fruit juice\n (E.g. abzzepnpp): ").strip()
+            juiceNameSequence = input(userInputMsg_juiceNames).strip()
     
     return retVal
 
@@ -120,9 +124,12 @@ def handleCalorieIntakeForFriend(calorieIntake):
             else:
                 print(generalErr)  # error for non numbers    
                 retVal = None
+                calorieIntake = input(userInputMsg_caloriesForFriend)
         except ValueError:
             print(generalErr)  # error for non numbers
             retVal = None
+            calorieIntake = input(userInputMsg_caloriesForFriend)
+    
     return retVal
 
 """

@@ -114,3 +114,65 @@ Possible juice mixes you can offer to
 ```
 
 # Error handling
+
+```
+~ No. of friends (between 1 to 200): -1
+Error: Invalid input. Try again.
+```
+
+```
+~ Number of unique fruit juices followed by their calorie content
+ E.g. If 2(juices) then input 2 9 34: 2 3 4 5
+Error: Invalid input. Try again.
+Instructions:
+--- If 2(juices) then input 2 9 34
+--- Separated by a space
+--- Only positive numbers allowed
+--- No. of juices <= 26
+--- Calorie content per juice <= 100
+    
+
+~ Number of unique fruit juices followed by their calorie content
+ E.g. If 2(juices) then input 2 9 34: abcd
+Error: Invalid input. Try again.
+Instructions:
+--- If 2(juices) then input 2 9 34
+--- Separated by a space
+--- Only positive numbers allowed
+--- No. of juices <= 26
+--- Calorie content per juice <= 100
+```
+
+```
+~ Number of unique fruit juices followed by their calorie content
+ E.g. If 2(juices) then input 2 9 34: 2 3 3
+
+~ Sequence of lower case alphabets representing the NAME of the fruit juice
+ (E.g. abzzepnpp): abc       
+Error: Invalid input. Try again.
+Instructions:
+--- If previous input was 2 9 4, that means you have only 2 juices available but you entered less/more alphabets
+--- Only alphabets are allowed
+    
+
+~ Sequence of lower case alphabets representing the NAME of the fruit juice
+ (E.g. abzzepnpp): 8888
+Error: Invalid input. Try again.
+Instructions:
+--- If previous input was 2 9 4, that means you have only 2 juices available but you entered less/more alphabets
+--- Only alphabets are allowed
+```
+
+```
+~ Number of calories allowed for friend:
+ E.g. 1 to any +ve number: - 
+Error: Invalid input. Try again.
+
+~ Number of calories allowed for friend:
+ E.g. 1 to any +ve number: -500
+Error: Invalid input. Try again.
+
+~ Number of calories allowed for friend:
+ E.g. 1 to any +ve number: ab
+Error: Invalid input. Try again.
+```

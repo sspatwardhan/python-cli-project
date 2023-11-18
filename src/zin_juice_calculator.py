@@ -25,10 +25,11 @@ def findJuiceMix(juices, caloriesPerJuice, targetCalorieIntake):
     # Expand caloriesPerJuice to the length of juiceNames by mapping values
     caloriesPerJuice = [alphabet_mapping[char] for char in juices]
 
+    # Not needed at present
     # Check if the lengths of juices and caloriesPerJuice are the same
-    if len(juices) != len(caloriesPerJuice):
-        print("Error: The lengths of 'juices' and 'caloriesPerJuice' must be the same.")
-        return
+    # if len(juices) != len(caloriesPerJuice):
+    #     print("Error: The lengths of 'juices' and 'caloriesPerJuice' must be the same.")
+    #     return
 
     # Prepare all possible calorie value combinations
     calorieValueCombinations = [comb for i in range(1, len(juices) + 1) for comb in combinations(range(len(juices)), i)]
@@ -52,6 +53,3 @@ def findJuiceMix(juices, caloriesPerJuice, targetCalorieIntake):
             break  # Exit the loop if a successful combination is found
 
     return ''.join(found_combination)
-
-# Example usage
-# findJuiceMix(['a','a','a','b','a','c','b','a','b','c','c'], [3, 4, 5, 6], 15)
