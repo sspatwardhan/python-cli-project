@@ -7,7 +7,7 @@ This application helps you plan a juice party by determining the juice combinati
 - [Workflow](#workflow)
 - [Project files](#project-files)
 - [Thought Process](#thought-process)
-- [Install] (#install)
+- [Install](#install)
 - [Usage](#usage)
 - [Sample Output](#sample-output)
 
