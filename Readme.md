@@ -149,9 +149,6 @@ Instructions:
 ```
 
 ```
-~ Number of unique fruit juices followed by their calorie content
- E.g. If 2(juices) then input 2 9 34: 2 3 3
-
 ~ Sequence of lower case alphabets representing the NAME of the fruit juice
  (E.g. abzzepnpp): abc       
 Error: Invalid input. Try again.
