@@ -120,6 +120,9 @@ Possible juice mixes you can offer to
 ```
 ~ No. of friends (between 1 to 200): -1
 Error: Invalid input. Try again.
+
+~ No. of friends (between 1 to 200): abc
+Error: Invalid input. Try again.
 ```
 
 ```
