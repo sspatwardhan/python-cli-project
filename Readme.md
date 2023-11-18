@@ -153,7 +153,8 @@ Instructions:
  (E.g. abzzepnpp): abc       
 Error: Invalid input. Try again.
 Instructions:
---- If previous input was 2 9 4, that means you have only 2 juices available but you entered less/more alphabets
+--- If previous input was 2 9 4, that means you have only 2 juices available
+but you entered less/more alphabets
 --- Only alphabets are allowed
     
 
@@ -161,7 +162,8 @@ Instructions:
  (E.g. abzzepnpp): 8888
 Error: Invalid input. Try again.
 Instructions:
---- If previous input was 2 9 4, that means you have only 2 juices available but you entered less/more alphabets
+--- If previous input was 2 9 4, that means you have only 2 juices available
+but you entered less/more alphabets
 --- Only alphabets are allowed
 ```
 
