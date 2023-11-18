@@ -5,7 +5,9 @@ parameter(s)
     - juices : type - list of strings
     - caloriesPerJuice : type - list of integers
     - targetCalorieIntake : integer
-returns - sorted list of strings
+Example: (['a','a','a','b','b','c','c'],[3,15,9,34], 56)
+returns - empty OR sorted list of strings which is first successful combination of juice mix
+Example: ['aabc']
 """
 def findJuiceMix(juices, caloriesPerJuice, targetCalorieIntake):
     # remove fist element as its not a calorie

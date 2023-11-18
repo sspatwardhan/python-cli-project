@@ -4,7 +4,9 @@ generalErr = "Error: Invalid input. Try again."
 
 """
 parameter(s) - numberOfFriends : type - string
+Example: handleFriendsCount('5')
 returns - validated integer value
+Example: handleFriendsCount(5)
 """
 def handleFriendsCount(numberOfFriends):
     while True:
@@ -25,7 +27,9 @@ def handleFriendsCount(numberOfFriends):
 
 """
 parameter(s) - calorieStats : type - list of strings
+Example: handleCalorieStats(['3','15','9','34'])
 returns - validated list of integers
+Example: handleCalorieStats([3,15,9,34])
 """
 def handleCalorieStats(calorieStats):
     calStatInstructions = '''
@@ -60,10 +64,12 @@ Instructions:
     return retVal
 
 """
-parameter(s) 
+parameter(s)
     - expectedNumberOfUniqueJuices : type - integer
     - juiceNameSequence : type - list of strings
-returns - validated list of integers
+Example: handleJuiceNameSequene(3,['a','c','b','b','c','a','c'])
+returns - sorted list of juice names
+Example: ['a','a','a','b','b','c','c']
 """
 def handleJuiceNameSequene(expectedNumberOfUniqueJuices, juiceNameSequence):
     juiceNameSequencingInstructions = '''
@@ -99,7 +105,9 @@ Instructions:
 
 """
 parameter(s) - calorieIntake : type - string
+Example: handleCalorieIntakeForFriend('56')
 returns - validated integer
+Example: handleCalorieIntakeForFriend(56)
 """
 def handleCalorieIntakeForFriend(calorieIntake):
     while True:
