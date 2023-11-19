@@ -13,21 +13,14 @@ returns - validated integer value
 Example: handleFriendsCount(5)
 """
 def handleFriendsCount(numberOfFriends):
-    while True:
-        try:
-            numberOfFriends = int(numberOfFriends)
-            if 1 <= numberOfFriends <= 200:
-                retVal = numberOfFriends
-                break # return on valid input
-            else:
-                print(generalErr) # error for numbers <1 and >200
-                numberOfFriends = input(userInputMsg_noOfFriends)
-                retVal = None
-        except ValueError:
-            print(generalErr)  # error for non numbers
-            numberOfFriends = input(userInputMsg_noOfFriends)
-            retVal = None
-    return retVal
+    try:
+        if 1 <= int(numberOfFriends) <= 200:
+            return int(numberOfFriends)
+        else:
+            return False
+    except ValueError:
+        return False
+
 
 """
 parameter(s) - calorieStats : type - list of strings
@@ -36,36 +29,26 @@ returns - validated list of integers
 Example: handleCalorieStats([3,15,9,34])
 """
 def handleCalorieStats(calorieStats):
-    calStatInstructions = '''
-Instructions:
+    calStatInstructions = ''' Instructions:
 --- If 2(juices) then input 2 9 34
 --- Separated by a space
 --- Only positive numbers allowed
 --- No. of juices <= 26
 --- Calorie content per juice <= 100
     '''
-
-    while True:
-        calorieStats = calorieStats.split()
+    try:
+        calorieStats = calorieStats = list(map(int, calorieStats.split()))
         # here
-        # -- input().split(): splits input in list of strings
-        try:
-            calorieStats = list(map(int, calorieStats))
-            # here
-            # -- map(input().split()): applies ^^ to all elements in the list returning (unreadable) map object
-            # -- list(map(input().split())): converts ^^ to readable list
-            if calorieStats[0] <= 26 and calorieStats[0] == len(calorieStats) - 1 and not any(item < 1 or item > 100 for item in calorieStats[1:]):
-                retVal = calorieStats
-                break # return on valid input
-            else:
-                print(generalErr + calStatInstructions)  # error for non numbers    
-                calorieStats = input(userInputMsg_caloriesPerJuice)
-                retVal = None
-        except ValueError:
-            print(generalErr + calStatInstructions)  # error for non numbers
-            calorieStats = input(userInputMsg_caloriesPerJuice)
-            retVal = None
-    return retVal
+        # -- map(input().split()): applies ^^ to all elements in the list returning (unreadable) map object
+        # -- list(map(input().split())): converts ^^ to readable list
+        if calorieStats[0] <= 26 and calorieStats[0] == len(calorieStats) - 1 and not any(item < 1 or item > 100 for item in calorieStats[1:]):
+            return calorieStats
+        else:
+            print(calStatInstructions)
+            return False
+    except ValueError:
+        print(calStatInstructions)
+        return False
 
 """
 parameter(s)
@@ -76,36 +59,28 @@ returns - sorted list of juice names
 Example: ['a','a','a','b','b','c','c']
 """
 def handleJuiceNameSequene(expectedNumberOfUniqueJuices, juiceNameSequence):
-    juiceNameSequencingInstructions = '''
-Instructions:
+    juiceNameSequencingInstructions = ''' Instructions:
 --- If previous input was 2 9 4, that means you have only 2 juices available but you entered less/more alphabets
 --- Only alphabets are allowed
     '''
-    while True:
-        juiceNameSequence = juiceNameSequence.strip() # remove spaces
-        try:
-            juiceNameSequenceForValidation = ''.join(set(filter(str.isalpha, juiceNameSequence.lower())))
-            # here
+
+    try:
+        juiceNameSequence = juiceNameSequence.replace(" ","") # remove spaces
+        juiceNameSequenceForValidation = ''.join(set(filter(str.isalpha, juiceNameSequence.lower())))
+        # here
             # filter(str.isalpha, juiceNameSequence.lower())
             # -- str.isalpha returns True if all characters in the string are alphabets
             # -- filter creates iteratable object
             # -- set() creates unsorted list of alphabets
             # -- join - joins all the alphabets
-            
-            if len(juiceNameSequenceForValidation) == expectedNumberOfUniqueJuices:
-                # if lowered string contains only alphabets then
-                retVal = sorted(list(juiceNameSequence))
-                break # return on valid input
-            else:
-                print(generalErr + juiceNameSequencingInstructions)  # error for non numbers    
-                retVal = None
-                juiceNameSequence = input(userInputMsg_juiceNames).strip()
-        except ValueError:
-            print(generalErr + juiceNameSequencingInstructions)  # error for non numbers
-            retVal = None
-            juiceNameSequence = input(userInputMsg_juiceNames).strip()
-    
-    return retVal
+        if len(juiceNameSequenceForValidation) == expectedNumberOfUniqueJuices:
+            return sorted(list(juiceNameSequence))
+        else:
+            print(juiceNameSequencingInstructions)
+            return False
+    except ValueError:
+        print(juiceNameSequencingInstructions)
+        return False
 
 """
 parameter(s) - calorieIntake : type - string
@@ -114,23 +89,14 @@ returns - validated integer
 Example: handleCalorieIntakeForFriend(56)
 """
 def handleCalorieIntakeForFriend(calorieIntake):
-    while True:
-        try:        
-            calorieIntake = int(calorieIntake)
-            if not calorieIntake < 0:
-                # if lowered string contains only alphabets
-                retVal = calorieIntake # return on valid input
-                break
-            else:
-                print(generalErr)  # error for non numbers    
-                retVal = None
-                calorieIntake = input(userInputMsg_caloriesForFriend)
-        except ValueError:
-            print(generalErr)  # error for non numbers
-            retVal = None
-            calorieIntake = input(userInputMsg_caloriesForFriend)
-    
-    return retVal
+    try:
+        calorieIntake = int(calorieIntake)
+        if calorieIntake > 0:
+            return calorieIntake
+        else:
+            return False
+    except:
+        return False
 
 """
 parameter(s) - botName : type - string
