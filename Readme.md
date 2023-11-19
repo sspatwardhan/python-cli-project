@@ -120,6 +120,7 @@ pytest
 ~ Number of calories allowed for Friend: 2
  E.g. 1 to any +ve number: 30
 
+---------------------------------------------------------
 Possible juice mixes you can offer to
 ---------------------------------------------------------
 [Friend 1] aaaa
