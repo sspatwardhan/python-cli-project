@@ -16,7 +16,7 @@ This application helps you plan a juice party by determining the juice combinati
 
 ## Workflow
 
-![Alt text](Zinrelo_Juice_Problem.png?raw=true "Workflow")
+![Alt text](requirement_docs/juice_party_project_workflow.png?raw=true "Workflow")
 
 ## Project Files
 ```
@@ -125,8 +125,8 @@ pytest
 ---------------------------------------------------------
 Possible juice mixes you can offer to
 ---------------------------------------------------------
-[Friend 1] aaaa
-[Friend 2] y
+[Friend 1]: aaaa
+[Friend 2]: y
 ---------------------------------------------------------
 ```
 
