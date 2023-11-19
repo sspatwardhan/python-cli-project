@@ -1,3 +1,5 @@
+[![UT - Juice Party Project](https://github.com/sspatwardhan/zin_juice_party_project/actions/workflows/ut_pipeline_zin_juice_party.yml/badge.svg)](https://github.com/sspatwardhan/zin_juice_party_project/actions/workflows/ut_pipeline_zin_juice_party.yml)
+
 # Juice Party Project
 
 This application helps you plan a juice party by determining the juice combinations based on the calorie requirements of your friends.
