@@ -117,10 +117,10 @@ parameter(s) - results : type - list of strings
 returns - nothing, just prints the results
 """
 def showResults(results):
-    print("\nPossible juice mixes you can offer to\n---------------------------------------------------------")
+    print("\n---------------------------------------------------------\nPossible juice mixes you can offer to\n---------------------------------------------------------")
     for r in range(0, len(results)):
         if len(results[r]) > 0:
-            print(f"[Friend {r+1}] {results[r]}")
+            print(f"[Friend {r+1}]: {results[r]}")
         else:
-            print(f"[Friend {r+1}] SORRY, YOU JUST HAVE WATER..")
+            print(f"[Friend {r+1}]: SORRY, YOU JUST HAVE WATER..")
     print("---------------------------------------------------------")
