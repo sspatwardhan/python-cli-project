@@ -10,8 +10,8 @@ def getJuicePartyReqs():
     while noOfFriends == False:
         noOfFriends = mh.handleFriendsCount(input(mh.userInputMsg_noOfFriends))
     
+    # Once correct friend count is received, start to take the requirements
     friendCounter = 1
-
     # Get no. of friends
     while friendCounter <= noOfFriends:
         print("\n--------------- Getting requirements for Friend: ", friendCounter)
