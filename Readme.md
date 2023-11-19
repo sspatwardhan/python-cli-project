@@ -7,6 +7,7 @@ This application helps you plan a juice party by determining the juice combinati
 - [Workflow](#workflow)
 - [Project files](#project-files)
 - [Thought Process](#thought-process)
+- [Unit Testing](#unit-testing)
 - [Install](#install)
 - [Usage](#usage)
 - [Sample Output](#sample-output)
@@ -22,6 +23,8 @@ zin_juice_main.py
 -- Supporting files:
 src/zin_input_methodHandlers.py
 src/zin_juice_calculator.py
+-- Unit Test files:
+src/test_zin_input_methodHandlers.py
 ```
 
 ## Thought Process
@@ -42,6 +45,14 @@ src/zin_juice_calculator.py
     - Enhanced optimization for further unit-testing
     - Logging
 
+## Unit Testing
+
+Prototyped UTs with positive and negative scenarios covered 
+
+```
+-- Unit Test files:
+src/test_zin_input_methodHandlers.py
+```
 
 ## Install
 
