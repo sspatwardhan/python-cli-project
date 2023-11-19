@@ -30,11 +30,7 @@ Example: handleCalorieStats([3,15,9,34])
 """
 def handleCalorieStats(calorieStats):
     calStatInstructions = ''' Instructions:
---- If 2(juices) then input 2 9 34
---- Separated by a space
---- Only positive numbers allowed
---- No. of juices <= 26
---- Calorie content per juice <= 100
+--- If 2(juices) then input 2 9 34 | Separated by a space | Only positive numbers allowed | No. of juices <= 26 | Calorie content per juice <= 100
     '''
     try:
         calorieStats = calorieStats = list(map(int, calorieStats.split()))
@@ -60,8 +56,7 @@ Example: ['a','a','a','b','b','c','c']
 """
 def handleJuiceNameSequene(expectedNumberOfUniqueJuices, juiceNameSequence):
     juiceNameSequencingInstructions = ''' Instructions:
---- If previous input was 2 9 4, that means you have only 2 juices available but you entered less/more alphabets
---- Only alphabets are allowed
+--- If previous input was 2 9 4, that means you have only 2 juices available but you entered less/more alphabets | Only alphabets are allowed
     '''
 
     try:

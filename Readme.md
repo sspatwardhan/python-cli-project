@@ -26,7 +26,8 @@ src/zin_juice_calculator.py
 
 ## Thought Process
 
-1. Assumptions (as per [requirements](requirement_docs/Problem1.pdf))
+1. Intuitive, well guided for the end user
+2. Assumptions (as per [requirements](requirement_docs/Problem1.pdf))
     - Ask availibile juices for every friend
     - Do not share available juices
     - Do not eliminate juices from single list
